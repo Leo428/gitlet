@@ -1,0 +1,18 @@
+# A simple test of adding, committing.
+> init
+<<<
++ wug.txt wug.txt
+> add wug.txt
+<<<
+> commit "added wug"
+<<<
++ wug2.txt wug2.txt
+> add wug2.txt
+<<<
+> commit "added wug2"
+<<<
++ wug3.txt wug3.txt
+> add wug3.txt
+<<<
+> commit "added wug3"
+<<<

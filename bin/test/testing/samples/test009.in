@@ -1,0 +1,10 @@
+#Tests rm-branch err
+I prelude1.inc
+> branch hi
+<<<
+> rm-branch hello
+A branch with that name does not exist.
+<<<
+> rm-branch master
+Cannot remove the current branch.
+<<<

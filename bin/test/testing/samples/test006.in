@@ -1,0 +1,30 @@
+# Tests log
+I prelude1.inc
+> branch hi
+<<<s
++ f.txt wug.txt
+> add f.txt
+<<<
+> commit "added f"
+<<<
+> checkout hi
+<<<
++ g.txt notwug.txt
+> add g.txt
+<<<
+> commit "added g"
+<<<
+D HEADER "commit [a-f0-9]+"
+D DATE "Date: \w\w\w \w\w\w \d+ \d\d:\d\d:\d\d \d\d\d\d [-+]\d\d\d\d"
+> log
+===
+${HEADER}
+${DATE}
+added g
+
+===
+${HEADER}
+${DATE}
+initial commit
+
+<<<*

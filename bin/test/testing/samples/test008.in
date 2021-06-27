@@ -1,0 +1,25 @@
+# Tests status complicated
+I prelude1.inc
++ f.txt wug.txt
++ g.txt wug.txt
++ h.txt notwug.txt
+> add f.txt
+<<<
+> add g.txt
+<<<
+> commit "added f, added g"
+<<<
+> branch hi
+<<<
+> checkout hi
+<<<
++ f.txt notwug.txt
+> add f.txt
+<<<
+> add h.txt
+<<<
+> commit "added h, modifed f"
+<<<
+> checkout master
+<<<
+= f.txt wug.txt
